@@ -22,6 +22,9 @@ let messagePrezzo;
 let messageFinalPrice;
 
 
+const visualizza = document.querySelector("off");
+
+
 //crea dati
 
 
@@ -77,13 +80,17 @@ getDati.addEventListener("click",
                 //creazione messaggi
 
         messageKm = `Devi percorrere ${userKm} km`;
-        messageEta = `Hai ${userAge} anni`;
+        messageEta = `La tua categoria é ${userAge}`;
         messagePrezzo = `Prezzo intero ${price} Euro`;
         messageFinalPrice = `<u>Il prezzo finale é ${priceDiscount} Euro</u>`;
 
 
         //output
 
+
+        // visualizza.style.display = "block";
+
+        document.getElementById("nomePasseggero").innerHTML = userName;
         document.getElementById("chilometri").innerHTML = messageKm;
         document.getElementById("eta").innerHTML = messageEta;
         document.getElementById("scontistica").innerHTML = messageDiscount;
