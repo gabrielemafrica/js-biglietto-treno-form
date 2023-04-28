@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto Treno</title>
+</head>
+<body>
+    <main>
+
+        <div class="container">
+            
+            <!-- titolo -->
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+            <!-- calcolatore -->
+
+            <div class="container white">
+
+
+                
+
+                <form>
+                    <!-- nome -->
+                    <div>
+                        <label for="userName">Nome Cognome:</label> <br>
+                        <input type="text" id="userName" name="userName" required>
+                    </div>
+                    <!-- km -->
+                    <div>
+                        <label for="userKm">Km da percorrere:</label> <br>
+                        <input type="number" id="userKm" name="userKm" required>
+                    </div>
+
+                    <!-- age -->
+
+                    <label for="userAge">Fascia d'etá</label><br>
+                    <select name="age" id="userAge" required>
+                        <option value="under">Minorenne</option>
+                        <option value="noScount">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+
+                    </select><br>
+
+                    <!-- sumbit -->
+                    <input type="submit" value="Genera" id="genera">
+                </form>
+
+            </div>
+
+
+            <!-- biglietto -->
+            <div class="container white off">
+
+
+
+            </div>
+
+            <h3 id="chilometri"></h3>
+            <h3 id="eta"></h3>
+            <h3 id="scontistica" class="red"></h3>
+            <h3 id="prezzo"></h3>
+            <h3 id="sconto"></h3>
+            <h3 id="finalPrice" class="red"></h3>
+            
+            
+            
+        </div>
+        
+    </main>
+
+
+
+
+    <script type="text/javascript" src="js/myjs.js">
+
+    </script>
+</body>
+</html>
